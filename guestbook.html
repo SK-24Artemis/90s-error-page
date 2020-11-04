@@ -1,0 +1,250 @@
+
+<!DOCTYPE html> 
+<head>
+  <title>Guest Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="guestbook_style.css">
+  <!-- <script src="guestbook.js"></script> -->
+</head>
+<html> 
+  
+<body style="text-align: center;"> 
+<div class="wrapper" align="center">
+
+  <div class="col-35">
+    <img src="404_images/GBook.gif" style="float: left;">
+
+
+      <blink><h1>Guest Book</h1></blink>
+
+    <p align="center" style="color: white;"> 
+        Type a message and then click the Post button below. 
+    </p> 
+    
+    <div style="padding-top: 15px;"></div>
+
+
+    <!-- previous/static posts section -->
+     <div> 
+      <div class="staticPost">
+        <p class="staticName">User: Anon42<br>
+          Mood: -__- <br>
+          Date Posted: October 10th, 2001, 15:58</p>
+     
+
+        <p>I find this website menacing/playful because of the way the optical suggestions of the Egyptian motifs threatens to penetrate the inherent overspecificity. </p>
+      </div>
+
+       <div class="staticPost">
+          <p class="staticName">User: N3k3db01_222<br>
+          Mood: naked <br>
+          Date Posted: November 18th, 2001, 02:12</p>
+
+        <p>It should be added that the optical suggestions of the spatial relationships brings within the realm of discourse a participation in the critical dialogue of the 90s.</p>
+      </div>
+
+      <div class="staticPost">
+          <p class="staticName">User: Ac!d_Burn<br>
+          Mood: burnination <br>
+          Date Posted: January 04th, 2002, 22:02</p>
+
+        <p>Such colour palette, many shade, so elegant. But seriously, looks great. See you at Roderick's. P.S. the refresh rate on my new monitor is unbelievable!</p>
+      </div>
+
+      <div style="">
+        <div class="staticPost">
+          <p class="staticName">User: Z3R0-K001<br>
+          Mood: freezing <br>
+          Date Posted: January 05th, 2002, 23:15</p>
+
+          <p>I think I'm crying. It's that gorgeous. Type, hero, style, colours – fab, friend.<br>Ac!d_Burn, you'll have to show me that sweet refresh rate after I finish taking over this tv network.</p>
+        </div>
+      </div> 
+    </div><!-- end previous static posts -->
+
+
+      <!-- OUTPUT -- VISITOR COMMENT SECTION--> 
+      
+      <!-- Visitor's Comment -->
+      <div id="visitorPost" class="visitorPostStyle">
+        <div id="visitorReply">
+
+          <!-- Visitor's Name, Mood and TIME DISPLAY HERE -->
+          <div class="visitorDetails">
+            <p id="visitorPostName" style="color: white; margin: 0px;"></p>
+            
+            <p id="visitorPostMood" style="color: white; margin: 0px;"></p>
+
+            <p id="time" style="color: white; margin: 0px;"></p>
+            <br>
+          </div>
+
+          <!-- Visitor Comments DISPLAY HERE-->
+          <p id="guestBk" style="color: #232323; padding-left: 10px"></p> 
+
+        </div>
+      </div>  <!-- END OUTPUT -->
+        
+
+
+        <!-- INPUT -->
+        <div class="visitorInput">
+
+        <!-- Get VISITOR'S NAME HERE -->
+          <div style="float: left; vertical-align: ">
+            <label for="name">Username:&nbsp;</label><br>
+            <input type="text" class="visitor-name" id="visitorName" name="visitorName" value="Add your User Name" onfocus="this.value=''">
+
+            <br><br>
+
+            <!-- Get VISITOR'S Mood HERE -->  
+            <label for="mood">Mood:&nbsp;</label><br>
+            <input type="text" class="visitor-mood" id="visitorMood" name="visitorMood" value="How are you feeling?" onfocus="this.value=''">
+            <br>
+            
+          </div>
+
+
+        <!-- Get VISITOR'S Comments Here -->
+          
+          <textarea
+                 id="visitorText"
+                 placeholder="Complain away!"
+                 onfocus="this.value=''"> 
+          </textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div align="right">
+        <button onclick="visitorPost()" id="postButton">Post</button> 
+      </div>
+
+      <!-- PAGE NAV LINKS -->
+      <p class="nav-text" align="center""><< <u>Prev Page</u>&nbsp;&nbsp;<u>1</u>&nbsp;&nbsp;<u>Next Page</u> >></p>
+
+    <div class="returnLinks">
+      <a href="error.html"  style="float: left;">Stay in the 90s</a>
+
+      <a href="http://raenpayne.com" style="float: right;">Return to the 2020s</a>
+    </div>
+
+    </div>
+    <!-- end col-35 -->
+  </div>
+  <!-- end wrapper -->
+</div>
+
+<script>  
+// gets visitor's text and displays it in  the guestBk div  
+//function gets visitor's name, mood, post and current time and date and places info into their divs
+
+function visitorPost() { 
+
+    // Don't submit the form
+    event.preventDefault();
+
+    //unhide visitorPost div
+    document.getElementById("visitorPost").style.display = "block";                
+                
+    //get visitor's input from visitorText area
+    var x = document.getElementById("visitorText").value; 
+    //place user's post (x) into guestBk div
+    document.getElementById("guestBk").innerHTML = x; 
+
+    //get user's name
+    var i = document.getElementById("visitorName").value;             
+    //place user's name (i) into visitorPostName div
+    document.getElementById("visitorPostName").innerHTML = "Username: " + i; 
+                
+    //get user's mood
+    var m = document.getElementById("visitorMood").value; 
+    //place user's mood (m) into userMood div
+    document.getElementById("visitorPostMood").innerHTML = "Mood: " + m; 
+          
+    //var v = document.getElementById("visitorPost").value;
+    //document.getElementById("visibility").innerHTML = true;
+
+
+    // get a new date (local machine date time)
+    var date1 = new Date();
+    // store new date in localstorage (ist's a string btw)
+    localStorage.setItem("date_date", date1);
+    // return date string from localstorage
+    var date2 = localStorage.getItem("date_date");
+    // set dateTime to string that concatenates Date Posted: & date string from localstorage (date2)
+    var dateTime = 'Date Posted: ' + date2;
+    // find the html element with the id of 'time' and set it to dateTime
+    document.getElementById('time').innerHTML = dateTime;
+
+
+    // Save the Username to localStorage
+    localStorage.setItem('userNameInput', visitorPostName.innerHTML);
+                
+    // Save the Mood to localStorage
+    localStorage.setItem('userMoodInput', visitorPostMood.innerHTML);
+    console.log('mood in local storage: ' + visitorPostMood);
+    
+    // Save the time to localStorage
+    localStorage.setItem('userTimeStamp', time.innerHTML);
+    console.log('time to localstorage: ');
+
+    // Save the comment to localStorage
+    localStorage.setItem('userPostText', guestBk.innerHTML);
+
+    //save visibility state
+    localStorage.setItem('visibility',visitorPost.innerHTML);
+    console.log('visibility state: ' + visibility);
+    } //end visitorPost()
+
+// Check for saved Username
+var savedName = localStorage.getItem('userNameInput');
+            
+// Check for saved Mood
+var savedMood = localStorage.getItem('userMoodInput');
+console.log('Saved Mood: ' + savedMood);
+
+// Check for saved Time
+var savedTime = localStorage.getItem('userTimeStamp');
+console.log('Saved Time: ' + savedTime);
+
+// Check for saved post
+var saved = localStorage.getItem('userPostText');
+
+
+var visibility = localStorage.getItem('visitorPost');
+            
+//change visibility
+var hidden = localStorage.getItem('visibility');
+console.log('hidden state: ' + hidden);
+
+// If there are any saved items, update appropriate fields
+if (savedName) {
+    visitorPostName.innerHTML = savedName;                
+    }
+            
+if (savedMood) {
+    visitorPostMood.innerHTML = savedMood;
+    }
+
+if (savedTime) {
+    time.innerHTML = savedTime;
+    }
+
+ if (saved) {
+    guestBk.innerHTML = saved;
+    }
+
+if (hidden != null) {
+    document.getElementById("visitorPost").style.display = "block";
+    } 
+else {
+    document.getElementById("visitorPost").style.display = "none";
+    }      
+console.log('hidden display: ' + hidden);
+</script>
+  
+</body> 
+  
+</html> 
