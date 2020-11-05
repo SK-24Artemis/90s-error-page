@@ -14,6 +14,8 @@ I was partly inspired by [Cameron's World](https://www.cameronsworld.net/). And 
 Whatever text you add to the guestbook form is stored in localstorage so if you navigate away and come back it looks like it's been saved permanently. But it has not, because that seemed like too much effort. 
 
 # Future Updates - Maybe
+### More Mobile Friendly
+I'd like to edit the page to be a bit more mobile friendly. Currently gifs and large images do not resize to fit smaller screens. 
 ### Webring
 I created a spooky banner for a webring which currently does not function but I'm thinking about making it work as a fun project to exercise my javascript skills. 
 ### Javascript
