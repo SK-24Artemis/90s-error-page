@@ -1,5 +1,6 @@
 # 90s-error-page
-Created a 90s website inspired error page for my website, complete with a guest book. Yes, there is both blinking AND scrolling text.<br> 
+### Created a 90s website inspired error page for my website, complete with a guest book.<br> 
+Yes, there is both blinking AND scrolling text.<br> 
 <br>
 Download as a .zip and open the error.html page in your browser of choice. Or you can go [here to see it in action](http://www.raenpayne.com/error "Spooky 90s themed 404 page").
 
