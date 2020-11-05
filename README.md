@@ -20,3 +20,5 @@ The guestbook works via some somewhat kludgy javascript. I'd like to make it les
 
 
 #### No, I'm not sure why I put so much effort into a page no one will see. :P
+
+![Error Page Preview](https://github.com/raenpayne/90s-error-page/blob/main/error%20screenshot.png)
