@@ -1,4 +1,4 @@
-# 90s-error-page
+# 90s Error Page
 ### Created a 90s website inspired error page for my website, complete with a guest book.
 Yes, there is both blinking AND scrolling text.
 
