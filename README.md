@@ -1,10 +1,11 @@
 # 90s-error-page
-### Created a 90s website inspired error page for my website, complete with a guest book.<br> 
-Yes, there is both blinking AND scrolling text.<br> 
-<br>
+### Created a 90s website inspired error page for my website, complete with a guest book.
+<br> 
+Yes, there is both blinking AND scrolling text.
+<br> 
 Download as a .zip and open the error.html page in your browser of choice. Or you can go [here to see it in action](http://www.raenpayne.com/error "Spooky 90s themed 404 page").
-
-> I was partly inspired by [Cameron's World](https://www.cameronsworld.net/). And yes, you should view Cameron's World with the sound up! It's amazing!
+<br>
+I was partly inspired by [Cameron's World](https://www.cameronsworld.net/). And yes, you should view Cameron's World with the sound up! It's amazing!
 
 # Features
 1. Gifs, wow so many gifs. 
