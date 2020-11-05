@@ -15,7 +15,7 @@ Whatever text you add to the guestbook form is stored in localstorage so if you 
 
 # Future Updates - Maybe
 ### Webring
-I created a spooky banner for a webring which currently does not function but I'm thinking about making a webring which I thought it would be a fun project to exercise my javascript skills. 
+I created a spooky banner for a webring which currently does not function but I'm thinking about making it work as a fun project to exercise my javascript skills. 
 ### Javascript
 The guestbook works via some somewhat kludgy javascript. I'd like to make it less kludgy as my javascript skills improve. 
 
