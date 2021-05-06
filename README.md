@@ -15,7 +15,8 @@ Whatever text you add to the guestbook form is stored in localstorage so if you 
 
 # Future Updates - Maybe
 ### More Mobile Friendly
-I'd like to edit the page to be a bit more mobile friendly. Currently gifs and large images do not resize to fit smaller screens. 
+~~I'd like to edit the page to be a bit more mobile friendly. Currently gifs and large images do not resize to fit smaller screens. ~~
+I finally got around to making the error and guestbook pages mobile friendly via some css and media queries. 
 ### Webring
 I created a spooky banner for a webring which currently does not function but I'm thinking about making it work as a fun project to exercise my javascript skills. 
 ### Javascript
