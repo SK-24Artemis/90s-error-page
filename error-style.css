@@ -1,0 +1,249 @@
+html, body {
+	background-color: white; /* #011717 */;
+	height: ;
+	width: ;
+	margin: ;
+}
+.content {
+	min-height: 100%;
+
+}
+.content-inside {
+	padding: px;
+	padding-bottom: px;
+	width: 100%;
+  	margin: 0 auto;
+  	display: grid;
+  	grid-gap: 20px;
+  	grid-template-rows: minmax(100px, auto);  
+}
+.mainheader {
+  grid-area: header;
+}
+.content {
+  grid-area: content;
+}
+.mainfooter {
+  grid-area: footer;
+}
+
+
+
+body {
+   background-image: url(404_images/goth-paper.png);
+   background-repeat: repeat;
+   background-size: ;
+}
+img {
+	max-width: 100%;
+}
+p {
+	color: white;
+}
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+	color: black;
+}
+/* mouse over link */
+a:hover {
+	color: #b72025; 
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+.bg-default {
+	background-color: #7F7F7F;
+}
+
+
+
+/* Lists */
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+}
+
+.error {
+	background: #232323;
+	padding: 0px;
+	border: 0px;
+	vertical-align: top;
+}
+.row-error {
+	width: 100% 
+	vertical-align: top;
+	justify-content: center;
+	background: #232323;
+	padding-left: 10px;
+	}
+.row-error a:link{
+	color: white;
+}
+.row-error a:visited {
+	color: gray;
+}
+.row-error a:hover {
+	color: #b72025;
+}
+.row-error a:active {
+    color: white;
+}
+.ankh {
+	background: #000000;
+	color: white;
+	padding: 20px;
+}
+
+figure {
+	width: auto;
+	max-width: 100%;
+	padding-top: 5px;
+	padding-bottom: 20px;
+    margin: 0;
+    text-align: left;
+    color: white;
+}
+
+.figure-error {
+	display: inline-flex;
+	width: auto;
+	padding-top: 20px;
+	padding-left: px;
+	padding-right: px;
+	padding-bottom: 60px;
+	vertical-align: top;
+	background-color: #232323;
+}
+
+.trees {
+	width: 100%;
+	background: url("404_images/trees.png");
+	background-color: #232323;
+	background-repeat: repeat-x;
+	height: 50px;	
+	padding: 0px;
+}
+
+.trees-light {
+	width: 100%;
+	background: url("404_images/trees.png");
+	background-color: #cccccc;
+	background-repeat: repeat-x;
+	height: 50px;	
+	padding: 0px;
+}
+
+.dark-bg {
+	background-color: #232323;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+.light-bg {
+	background-color: #cccccc;
+}
+.error {
+	background: #232323;
+	padding-top: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	border: 0px;
+	vertical-align: top;
+}
+.error a:link {
+    color: white;
+}
+
+/* visited link */
+.error a:visited {
+	color: #cccccc;
+}
+/* mouse over link */
+.error a:hover {
+	color: #b72025; 
+}
+/* selected link */
+.error a:active {
+    color: white;
+}
+
+.ankh {
+	background: #000000;
+	color: white;
+	padding: 20px;
+	float: center;
+}
+
+
+/* 90s Marquee Text */
+.scroll-left {
+	height: 50px;	
+	overflow: hidden;
+	position: relative;
+}
+.scroll-left p {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+
+/* Starting position */
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);	
+	transform:translateX(100%);
+
+/* Apply animation to this element */	
+	-moz-animation: scroll-left 20s linear infinite;
+	-webkit-animation: scroll-left 20s linear infinite;
+	animation: scroll-left 20s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+	0%   { -moz-transform: translateX(100%); }
+	100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+	0%   { -webkit-transform: translateX(100%); }
+	100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+	0%   { 
+	-moz-transform: translateX(100%); /* Browser bug fix */
+	-webkit-transform: translateX(100%); /* Browser bug fix */
+	transform: translateX(100%); 		
+}
+100% { 
+	-moz-transform: translateX(-100%); /* Browser bug fix */
+	-webkit-transform: translateX(-100%); /* Browser bug fix */
+	transform: translateX(-100%); 
+}
+
+
+
+@media (min-width: 550px) {
+  
+  
+  .wrapper {
+    grid-template-columns: 30% 65%;
+    grid-template-areas:
+      "header"
+      "content"
+      "footer"
+  }
+}
+
+
